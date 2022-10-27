@@ -1,9 +1,10 @@
 import { useState, useEffect } from 'react';
 
 import NavComponent from './components/nav-component';
+import HeroComponent from './components/hero-component';
+import PicturesComponent from './components/pictures-components';
 
 import './App.css';
-import HeroComponent from './components/hero-component';
 
 function App() {
   const [showMenu, setShowMenu] = useState(false);
@@ -21,6 +22,7 @@ function App() {
       <div className="container">
         <NavComponent showMenu={showMenu} setShowMenu={setShowMenu} />
         <HeroComponent />
+        <PicturesComponent />
       </div>
     </div>
   );
