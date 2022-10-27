@@ -13,7 +13,7 @@
   position: relative;
 }
 .container {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   width: 90%;
   margin: auto;
 } 
@@ -27,4 +27,30 @@
 }
 .desktop-nav {
   display: none;
+}
+.inner-menu {
+  background-color: #fff;
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  height: 100vh;
+  width: 70%;
+}
+.inner-menu div {
+  position: absolute;
+  top: 30%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+}
+.inner-menu .close {
+  position: relative;
+  top: 17px;
+  right: -85px;
+}
+
+.inner-menu div ul li {
+  font-weight: 700;
+  font-size: 1.1rem;
+  margin: 1.8em 0;
+  text-align: left;
 }

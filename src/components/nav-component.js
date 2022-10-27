@@ -1,4 +1,9 @@
-export default function NavComponent(){
+export default function NavComponent({showMenu, setShowMenu}){
+    
+
+    const clickHandler = () => {
+        setShowMenu(!showMenu);
+    }
     return (
         <nav className="nav">
             <div>
@@ -13,10 +18,23 @@ export default function NavComponent(){
                     <li>Categories</li>
                 </ul>
             </div>
-            <div className="mobile-nav">
+            <div className="mobile-nav" onClick={clickHandler}>
                 <img src="/assets/images/icon-menu.svg" alt="" />
             </div>
-
+            {showMenu ? (
+                <div className="inner-menu">
+                    <img src="/assets/images/icon-menu-close.svg" alt="" className='close' onClick={clickHandler} />
+                    <div>
+                        <ul>
+                            <li>Home</li>
+                            <li>New</li>
+                            <li>Popular</li>
+                            <li>Trending</li>
+                            <li>Categories</li>
+                        </ul>
+                    </div>
+                </div>
+            ): ""}
         </nav>
     )
 }
