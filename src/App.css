@@ -3,9 +3,28 @@
 * {
   margin: 0;
   padding: 0;
+  list-style: none;
 }
 
 .App {
   text-align: center;
   font-family: 'Inter', sans-serif;
+  padding: 1em 0;
+  position: relative;
+}
+.container {
+  border: 1px solid red;
+  width: 90%;
+  margin: auto;
 } 
+
+/* NavComponent */
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 2em;
+}
+.desktop-nav {
+  display: none;
+}
