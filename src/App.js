@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react';
 import NavComponent from './components/nav-component';
 
 import './App.css';
+import HeroComponent from './components/hero-component';
 
 function App() {
   const [showMenu, setShowMenu] = useState(false);
@@ -19,6 +20,7 @@ function App() {
     <div className="App">
       <div className="container">
         <NavComponent showMenu={showMenu} setShowMenu={setShowMenu} />
+        <HeroComponent />
       </div>
     </div>
   );
