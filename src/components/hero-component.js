@@ -1,6 +1,8 @@
+import 'animate.css';   
+
 export default function HeroComponent(){
     return (
-        <section className="hero">
+        <section className="hero animate__animated animate__backInRight">
             <div className="item">
                 <img src="/assets/images/image-web-3-mobile.jpg" alt="" className="img-mobile" />
                 <img src="/assets/images/image-web-3-desktop.jpg" alt="" className="img-desktop" />

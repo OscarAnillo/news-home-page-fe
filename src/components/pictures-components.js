@@ -1,6 +1,8 @@
+import 'animate.css';
+
 export default function PicturesComponent(){
     return (
-        <div className="pictures">
+        <div className="pictures animate__animated animate__backInLeft">
             <div className="row">
                 <div>
                     <img src="/assets/images/image-retro-pcs.jpg" alt="" />
