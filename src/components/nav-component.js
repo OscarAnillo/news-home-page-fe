@@ -1,3 +1,5 @@
+import 'animate.css';
+
 export default function NavComponent({showMenu, setShowMenu}){
     
 
@@ -7,9 +9,9 @@ export default function NavComponent({showMenu, setShowMenu}){
     return (
         <nav className="nav">
             <div>
-                <img src="/assets/images/logo.svg" alt="" />
+                <img src="/assets/images/logo.svg" alt="" className="animate__animated animate__backInDown"/>
             </div>
-            <div className="desktop-nav">
+            <div className="desktop-nav animate__animated animate__backInDown">
                 <ul>
                     <li>Home</li>
                     <li>New</li>
