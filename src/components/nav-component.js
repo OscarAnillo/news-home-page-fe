@@ -9,9 +9,9 @@ export default function NavComponent({showMenu, setShowMenu}){
     return (
         <nav className="nav">
             <div>
-                <img src="/assets/images/logo.svg" alt="" className="animate__animated animate__backInDown"/>
+                <img src="/assets/images/logo.svg" alt="" />
             </div>
-            <div className="desktop-nav animate__animated animate__backInDown">
+            <div className="desktop-nav">
                 <ul>
                     <li>Home</li>
                     <li>New</li>

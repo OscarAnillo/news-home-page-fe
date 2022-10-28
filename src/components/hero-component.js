@@ -2,10 +2,10 @@ import 'animate.css';
 
 export default function HeroComponent(){
     return (
-        <section className="hero animate__animated animate__backInRight">
+        <section className="hero">
             <div className="item">
                 <img src="/assets/images/image-web-3-mobile.jpg" alt="" className="img-mobile" />
-                <img src="/assets/images/image-web-3-desktop.jpg" alt="" className="img-desktop" />
+                <img src="/assets/images/image-web-3-desktop.jpg" alt="" className="img-desktop animate__animated animate__backInLeft" />
             </div>
             <div className="item">
                 <h1 className="hero-title">The Bright Future of Web 3.0?</h1>
@@ -14,7 +14,7 @@ export default function HeroComponent(){
                 <p className="hero-text">We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. But is it really fulfilling its promise?</p>
                 <button className="hero-btn">read more</button>
             </div>
-            <div className="dark dark-item">
+            <div className="dark dark-item animate__animated animate__backInRight">
                 <div className="dark-inner">
                     <h1>New</h1>
                     <div className="dark-inner-div">
