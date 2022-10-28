@@ -11,6 +11,7 @@
   font-family: 'Inter', sans-serif;
   padding: 1em 0;
   position: relative;
+  overflow: hidden;
 }
 .container {
   /* border: 1px solid red; */
@@ -61,6 +62,9 @@ img {
 /* HeroComponent */ 
 .hero {
   text-align: left;
+}
+.img-desktop {
+  display: none;
 }
 .hero-title {
   color: rgb(1, 0, 31);
@@ -218,5 +222,128 @@ img {
     color: hsl(236, 13%, 42%);
     font-weight: 400;
     font-size: 1rem;
+  }
+}
+
+@media(min-width: 1000px) {
+  .container {
+    width: 72%;
+  }
+  /* NavComponent */
+  .nav {
+    padding: 2em 0;
+  }
+  .mobile-nav {
+    display: none;
+  }
+  .desktop-nav {
+    display: block;
+  }
+  .desktop-nav ul {
+    display: flex;
+    align-items: center;
+  }
+  .desktop-nav ul li {
+    margin-left: 2.5em;
+  }
+  .desktop-nav ul li:hover {
+    cursor: pointer;
+    color: hsl(5, 85%, 63%);
+  }
+  /* HeroComponent */
+
+  .hero {
+    text-align: left;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .hero > div:nth-child(1) {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+  .dark-item {
+    grid-column-start: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+  }
+
+  .img-mobile {
+    display: none;
+  }
+  .img-desktop {
+    display: block;
+  }
+  .hero-title {
+    font-size: 3rem;
+    padding-bottom: 0px;
+    padding-top: 1em;
+    margin: 0;
+  }
+  .hero-text {
+    font-size: 1.1rem;
+  }
+  .hero-btn {
+    margin-top: .5em;
+    transition: all .3s;
+  }
+  .hero-btn:hover {
+    background-color: rgb(1, 0, 31);
+    cursor: pointer;
+  }
+  .dark {
+    margin-top: 0px;
+    padding: 1em 0px;
+    color: #fff;
+  }
+  .dark-inner h1 {
+    font-size: 2.3rem;
+    padding-bottom: .6em;
+  }
+  .dark-inner-div {
+    padding: 2.5em 0;
+  }
+  .dark-inner-div h2 {
+    font-size: 1.3rem;
+    padding-bottom: .5em;
+  }
+  .dark-inner-div h2:hover {
+    color: hsl(35, 77%, 62%);
+    cursor: pointer;
+  }
+  .dark-inner-div p {
+    font-weight: 400;
+    color: rgb(135, 135, 159);
+  }
+  .dark-inner-div:nth-child(3) {
+    border: none;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+  }
+  /* PicturesComponent */
+  .pictures {
+    display: grid;
+    gap: 1em;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .row > div:nth-child(1) {
+    width: 45%;
+  }
+  .wrapper {
+    margin: auto 2em;
+  }
+  .wrapper h2 {
+    font-size: 3rem;
+  }
+  .wrapper h3 {
+    font-size: 1.3rem;
+    transition: all .2s;
+  }
+  .wrapper h3:hover {
+    color: hsl(5, 85%, 63%);
+    cursor: pointer;
+  }
+  .wrapper p {
+    font-size: 1.1rem;
   }
 }

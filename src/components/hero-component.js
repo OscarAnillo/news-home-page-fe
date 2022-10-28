@@ -1,17 +1,18 @@
 export default function HeroComponent(){
     return (
         <section className="hero">
-            <div>
-                <img src="/assets/images/image-web-3-mobile.jpg" alt="" />
+            <div className="item">
+                <img src="/assets/images/image-web-3-mobile.jpg" alt="" className="img-mobile" />
+                <img src="/assets/images/image-web-3-desktop.jpg" alt="" className="img-desktop" />
             </div>
-            <div>
+            <div className="item">
                 <h1 className="hero-title">The Bright Future of Web 3.0?</h1>
             </div>
-            <div>
+            <div className="item">
                 <p className="hero-text">We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. But is it really fulfilling its promise?</p>
                 <button className="hero-btn">read more</button>
             </div>
-            <div className="dark">
+            <div className="dark dark-item">
                 <div className="dark-inner">
                     <h1>New</h1>
                     <div className="dark-inner-div">
